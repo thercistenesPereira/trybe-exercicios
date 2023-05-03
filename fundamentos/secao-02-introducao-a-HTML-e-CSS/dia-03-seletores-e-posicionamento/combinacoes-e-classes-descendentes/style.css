@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+ol {
+    background-color: yellow;
+}
+li {
+    font-size: 20px;
+}
+li > em {
+    font-weight: bold;
+}
+li.par{
+    color: green;
+}
+li.impar {
+    text-transform: uppercase;
+}
+h1, h3 {
+    color: red;
+}
+h1 > em, h3 > em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+a:hover {
+    font-weight: bold;
+}
+a#laranja:hover {
+    color: orange;
+}
+a#verde:hover {
+    color: green;
+}
+a#amarela:hover {
+    color: yellow;
+}
+a#black:hover {
+    color: black;
+}
