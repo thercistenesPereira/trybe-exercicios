@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+div:hover {
+    border: 1px solid black;
+}
+div#cor-primaria {
+    background-color: yellow;
+}
+div#cor-secundaria {
+    background-color: orange;
+    padding: 25px;
+    font-style: italic;
+}
+div#cor-complementar {
+    background-color: blueviolet;
+}
+div#cor-escura {
+    background-color: darkred;
+}
+div#cor-clara {
+    background-color: aqua;
+}
