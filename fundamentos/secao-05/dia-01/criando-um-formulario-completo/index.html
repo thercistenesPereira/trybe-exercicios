@@ -5,54 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criando formulário completo</title>
+    <link rel="stylesheet" href="../../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>FORMULÁRIO</h1>
+    <h1 class="display-4 text-muted">FORMULÁRIO</h1>
     <form action="" method="get">
-        <label for="nome">Nome completo:
-            <input type="text" name="name" id="nome" placeholder="Digite seu nome" required>
-        </label>
+        <div class="form-group">
+            <label for="nome">Nome completo:
+                <input type="text" class="form-control" name="name" id="nome" placeholder="Digite seu nome" required>
+            </label>
+        </div>
+
         <br>
-        <label for="email">E-mail:
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-        </label>
+
+        <div class="form-group">
+            <label for="email">E-mail:
+                <input class="form-control" type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </label>
+        </div>
+
         <br>
-        <label for="input-estado">Estado onde você mora
-         <select name="estado" id="input-estado">
-            <option value="ma">Maranhão</option>
-            <option value="pi" selected>Piauí</option>
-            <option value="ce">Ceará</option>
-            <option value="pe">Pernambuco</option>
-         </select>
-        </label>
-        <p>Selecione sua foto.</p>
-        <input type="file" name="foto" id="input-foto">
+
+        <div class="form-group">
+            <label for="input-estado">Estado onde você mora
+             <select class="form-control" name="estado" id="input-estado">
+                <option value="ma">Maranhão</option>
+                <option value="pi" selected>Piauí</option>
+                <option value="ce">Ceará</option>
+                <option value="pe">Pernambuco</option>
+             </select>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Selecione sua foto.</p>
+            <input class="form-control btn btn-warning" type="file" name="foto" id="input-foto">
+        </div>
   
 
-    <p>Comida Favorita</p>
-    <label for="comida1">
-        <input type="radio" name="comida-favorita" id="comida1" value="lasanha" checked>Lasanha
-    </label>
+    <div class="form-group">
+        <p>Comida Favorita</p>
+        <label for="comida1">
+            <input class="form-control" type="radio" name="comida-favorita" id="comida1" value="lasanha" checked>Lasanha
+        </label>
+    </div>
 
-    <label for="comida2">
-        <input type="radio" name="comida-favorita" id="comida2" value="bife">Bife
-    </label>
+    <div class="form-group">
+        <label for="comida2">
+            <input class="form-control" type="radio" name="comida-favorita" id="comida2" value="bife">Bife
+        </label>
+    </div>
 
-    <p>Escreva algo sobre você</p>
-    <textarea name="textarea" id="textarea1" cols="30" rows="5"></textarea>
+    <div class="form-group">
+        <p>Escreva algo sobre você</p>
+        <textarea class="form-control" name="textarea" id="textarea1" cols="30" rows="5"></textarea>
+    </div>
 
-    <p>Digite sua senha</p>
-    <label for="input-senha">
-        <input type="password" name="senha" id="input-senha" required>
-    </label>
+    <div class="form-group">
+        <p>Digite sua senha</p>
+        <label for="input-senha">
+            <input class="form-control" type="password" name="senha" id="input-senha" required>
+        </label>
+    </div>
 
     <br>
-    <label for="promocoes">
-        <input type="checkbox" name="checkbox-promocoes" id="promocoes" checked>Deseja receber nossas notícias?
-    </label>
+    <div class="form-group">
+        <label for="promocoes">
+            <input class="form-control" type="checkbox" name="checkbox-promocoes" id="promocoes" checked>Deseja receber nossas notícias?
+        </label>
+    </div>
 
-    <br>
-    <button type="submit">Enviar formulário</button>
+    <div class="form-group">
+        <br>
+        <button type="submit" class="btn btn-success">Enviar formulário</button>
+    </div>
 </form>
 </body>
 </html>
