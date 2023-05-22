@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/pulga.png" type="image/x-icon">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <link rel="stylesheet" href="style.css">
+  <title>Restaurante Pulga D'Agua</title>
+</head>
+
+<body>
+  <header>
+    <h1>Ordem de Pedido</h1>
+  </header>
+
+  <main>
+    <form action="" method="get" id="form">
+      <h4>Identificação:</h4>
+      <div class="user">
+        <label for="Nome">Nome:</label>
+        <input class="ease-input" type="text" name="Nome" id="Nome" required>
+
+        <br><br>
+        <!-- bora Brasil -->
+
+        <label for="E-mail">E-mail:</label>
+        <input class="ease-input" type="email" name="E-mail" id="E-mail">
+
+      </div>
+
+      <div class="picture">
+        <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png" alt="Imagem de avatar." class="picture" id="foto-input">
+      </div>
+
+      <br><br>
+
+      <label for="Foto">Foto:</label>
+      <input type="file" name="Foto" id="foto">
+
+      <br><br>
+
+      <h4>Tamanho:</h4>
+      <select name="Tamanho" id="tamanhoMarmitas"></select>
+
+      <br><br>
+
+      <h4>Opção de Feijão</h4>
+      <label for="feijao-carioca">Feijão Carioca</label>
+      <input type="radio" name="Feijão" id="feijao-carioca" value="Carioca" checked>
+      <br>
+      <label for="feijao-preto">Feijão Preto</label>
+      <input type="radio" name="Feijão" id="feijao-preto" value="Preto">
+
+      <br><br>
+
+      <h4>Onde vai o feijão em relação ao arroz?</h4>
+      <label for="feijao-cima">Feijão por cima</label>
+      <input type="radio" name="Feijão-Posição" id="feijao-cima" value="Cima" checked>
+      <br>
+      <label for="feijao-cima2">Arroz por baixo</label>
+      <input type="radio" name="Feijão-Posição" id="feijao-cima2" value="Cima">
+
+      <br><br>
+
+      <h4>Ovo frito:</h4>
+      <label for="ovo">Quantidade: (R$1,00 cada)</label>
+      <input class="ease-input" type="number" name="Ovos" id="ovo" min="0" max="6" value="0">
+
+      <br><br>
+
+      <h4>Macarrão:</h4>
+      <label for="">(R$2,00 cada)</label>
+      <br>
+      <label for="molho-madeira">Molho madeira</label>
+      <input type="checkbox" name="Molho" id="molho-madeira" value="Madeira">
+      <br>
+      <label for="molho-branco">Molho branco</label>
+      <input type="checkbox" name="Molho" id="molho-branco" value="Branco">
+      <br>
+      <label for="molho-sugo">Molho sugo</label>
+      <input type="checkbox" name="Molho" id="molho-sugo" value="Sugo">
+      <br>
+      <label for="molho-alho">Alho e óleo</label>
+      <input type="checkbox" name="Molho" id="molho-alho" value="Alho-e-Óleo">
+
+      <br><br>
+
+      <label for="">Algum comentário?</label>
+      <br>
+      <textarea class="ease-input" name="Comentário" id="" cols="30" rows="5" placeholder="Escreva aqui seu comentário ..."></textarea>
+
+      <br><br>
+
+      <button type="submit" id="btn-submit">Fazer pedido</button>
+      <button id="btn-recovery">Recuperar nota do último pedido</button>
+  
+
+    </form>
+  </main>
+
+  <aside class="ticket">
+    <br><br><br>
+    == RESTAURANTE PULGA D'AGUA ==
+    <br>
+    ☠️ Quem não sobrevive não volta mais ☠️
+    <br><br>
+
+    Pedido nº <span>2323</span>
+
+    <div class="left">
+      <ol id="orderList"></ol>
+    </div>
+
+    <br><br><br>
+
+    Obrigado por nunca mais não voltar 💚
+    <br><br><br>
+
+  </aside>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
