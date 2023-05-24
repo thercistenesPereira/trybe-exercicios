@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    margin: 20px;
+}
+
+div {
+    max-width: 300px;
+    min-height: 300px;
+    border: 1px solid blue;
+    margin: 20px;
+}
+
+p {
+    background-color: orange;
+    border: 2px solid black;
+    color: white;
+    padding: 10px;
+}
+
+.p-diferente {
+    height: 50px;
+}
+
+.test-flex {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: space-between;
+}

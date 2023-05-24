@@ -1,0 +1,33 @@
+* {  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {  margin: 20px;
+}
+
+div {  width: 200px;
+    min-width: 70px;
+    border: 1px solid blue;
+    margin: 20px;
+}
+
+p {
+    background-color: orange;
+    border: 2px solid black;
+    color: white;
+}
+
+.test-inline-block p{
+    display: inline-block;
+    height: 50px;
+}
+
+.test-inline p{
+    display: inline;
+}
+
+.test-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
