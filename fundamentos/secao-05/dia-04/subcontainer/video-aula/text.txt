@@ -1,0 +1,7 @@
+flex-flow:
+é mais um atalho para flex-diretion e flex-wrap.
+como ele é um atalho recebe 2 parâmentros, primeiro o do flex-direction e depois do flex-wrap;
+ex: flex-flow: column wrap;
+
+ALIGN-SELF 
+primeiramente ele é usado para definir um item individualmente. Permite assim, controlar a posição de um elemento específico dentro de um item.
