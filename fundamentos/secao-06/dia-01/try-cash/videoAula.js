@@ -1,5 +1,5 @@
 const verificaValores = (a, b) => {
-    if (a !== 'number' || b !== 'number') {
+    if (typeof a !== 'number' || typeof b !== 'number') {
         throw new Error('ERRO! Os valores precisam ser numéricos');
     }
 };
@@ -14,4 +14,4 @@ const sum = (a, b) => {
     }
 }
 
-console.log(sum(2, '3'));
+console.log(sum(2, 3));
