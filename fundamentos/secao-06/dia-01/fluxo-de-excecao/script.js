@@ -26,7 +26,6 @@ const showPromo = (name, number) => {
     const secondText = document.querySelector('#text-final');
 
     try { //tenta executar o código com sucesso
-        checkName(name);
         checkNumber(parseInt(number));
         checkValideRange(number)
         const productObject = checkPromo(number);
