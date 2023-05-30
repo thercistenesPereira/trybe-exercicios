@@ -82,7 +82,7 @@ const getHarryPotterMovies = (year) => {
         throw new Error ('Valor inesperado. Insira um número!');
     }
     
-    for(let index = 0; index < harryPotterMovies.filmes.length; index += 10) {
+    for(let index = 0; index < harryPotterMovies.filmes.length; index += 1) {
         if(harryPotterMovies.filmes[index].ano_lancamento === parseInt(year)) {
             return harryPotterMovies.filmes[index]['titulo'];
         } else {
@@ -92,10 +92,10 @@ const getHarryPotterMovies = (year) => {
 };
 
 const addHarryPotterMovie = () => {
-    try {
-        const year = document.querySelector('#movie');
-        const result = document.querySelector('#result');
+    const year = document.querySelector('#movie').value;
+    const result = document.querySelector('#result');
 
+    try {
         result.innerHTML = `No ano ${year} foi lançado o título ${getHarryPotterMovies(year)}`
     }   
     
