@@ -92,5 +92,26 @@ const getHarryPotterMovies = (year) => {
 };
 
 const addHarryPotterMovie = () => {
+    try {
+        const year = document.querySelector('#movie');
+        const result = document.querySelector('#result');
+
+        result.innerHTML = `No ano ${year} foi lançado o título ${getHarryPotterMovies(year)}`
+    }   
     
+    catch (error) {
+        result.innerHTML = error.message
+    }
+
+    finally {
+        document.querySelector('#movie').value = '';
+    }
+
+    result.innerHTML = `No ano ${year} não foi lançado nenhum filme do Harry Potter`;
+}
+
+window.onload = () => {
+    const button = document.querySelector('button');
+
+    button.addEventListener('click', addHarryPotterMovie);
 }

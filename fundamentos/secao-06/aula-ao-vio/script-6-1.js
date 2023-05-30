@@ -74,10 +74,10 @@ const harryPotterMovies = {
       document.querySelector('#movie').value = '';
     }
     
-    // result.innerHTML = `No ano ${year} não foi lançado nenhum filme do Harry Potter`;
+    result.innerHTML = `No ano ${year} não foi lançado nenhum filme do Harry Potter`;
   
     
-    //   document.querySelector('#movie').value = '';
+      document.querySelector('#movie').value = '';
   
   }
   
