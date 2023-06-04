@@ -1,4 +1,4 @@
-const { object } = require("prop-types");
+// const { object } = require("prop-types");
 
 const customer = {
   firstName: 'Roberto',
