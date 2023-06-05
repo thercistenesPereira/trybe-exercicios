@@ -1,4 +1,4 @@
-const { log } = require("console");
+// const { log } = require("console");
 
 const books = [
   {
@@ -98,5 +98,12 @@ console.log(getNamedBook());
 function everyoneWasBornOnSecXX() {
   return books.every((book) => (book.author.birthYear >= 1901 && book .author.birthYear <= 2000));
 }
-console.log(everyoneWasBornOnSecXX());
+everyoneWasBornOnSecXX();
 
+
+//Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false, caso contrário.
+// const expectedResult = true;
+const someBookWasReleaseOnThe80s = () => {
+  return books.some((book) => (book.releaseYear >= 1980 && book.releaseYear <= 1989));
+}
+console.log(someBookWasReleaseOnThe80s());
