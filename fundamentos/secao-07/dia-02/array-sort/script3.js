@@ -5,11 +5,11 @@ const gamers =  [
     },
     {
       nome: "Maria",
-      "points": [79, 52, 38, 87, 62, 44, 90, 21, 59, 81]
+      points: [79, 52, 38, 87, 62, 44, 90, 21, 59, 81]
     },
     {
       nome: "João",
-      pontos: [18, 97, 66, 29, 43, 85, 74, 11, 56, 32]
+      points: [18, 97, 66, 29, 43, 85, 74, 11, 56, 32]
     },
     {
       nome: "Lucas",
@@ -17,5 +17,14 @@ const gamers =  [
     }
   ]
 
-gamers.sort((a, b) => a.nome > b.nome ? 1 : -1);
+gamers.sort((a, b) => {
+  let pointsA = 0;
+  let pointsB = 0;
+
+  a.points.forEach((point) => pointsA += point);
+  b.points.forEach((point) => pointsB += point);
+
+  return pointsA - pointsB;
+});
+
 console.log(gamers);
