@@ -11,6 +11,3 @@ console.log(pessoas.some((pessoa) => pessoa.idade > 30));
 console.log(pessoas.every((pessoa) => pessoa.idade > 20));
 console.log(pessoas.sort((a, b) => a.idade - b.idade ));
 console.log(pessoas.map((pessoa) => pessoa.nome));
-
-
-
