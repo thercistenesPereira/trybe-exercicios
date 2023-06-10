@@ -1,5 +1,3 @@
-// const { values } = require("prelude-ls");
-
 const product = {
   name: 'Ruffles Original - 76g',
   price: 8.59,
@@ -11,4 +9,4 @@ const product = {
   }
 };
 
-console.log(Object.values(product));
+console.log(Object.entries(product));
