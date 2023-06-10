@@ -11,5 +11,9 @@ const addProperty = (object, key, value) => {
 }
 
 addProperty(customer, 'lastName', 'Silva');
+addProperty(customer, 'email', 'thercistenes@gmail.com');
+addProperty(customer, 'phone', 984376423);
+addProperty(customer, 'userGithub', '@thercistenes');
+addProperty(customer, 'instagram', 'thercistenes');
 
 console.log(customer);
