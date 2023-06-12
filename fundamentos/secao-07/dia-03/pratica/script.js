@@ -75,3 +75,11 @@ getPopulation();
 const getTotalArea = () => countries.reduce((acc, country) => acc + country.area, 0);
 console.log(getTotalArea());
 
+// 🚀 3 - Encontre o país com o maior nome.
+// De olho na dica 👀: o reduce consegue comparar o valor do primeiro com o segundo parâmetro. Compare o tamanho da string name do primeiro parâmetro com a do segundo parâmetro e retorne aquele que for maior.
+const longestName = () => countries.reduce((acc, nextCountry) => acc.name.length < nextCountry.name.length ? nextCountry : acc);
+longestName();
+
+// 🚀 4 - Retorne a quantidade de vezes que a letra a maiúscula ou minúscula aparece no array de nomes.
+// De olho na dica 👀: faça com que o array de nomes seja um array de letras.
+
