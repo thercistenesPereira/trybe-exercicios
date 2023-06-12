@@ -1,0 +1,9 @@
+const names = ['Daniel', 'Jaiane', 'Rodrigo', 'Mariane', 'Mariele'];
+
+const countName = names.reduce((count, nomeAtual) => {
+    const firstLetter = nomeAtual[0].toLocaleLowerCase();
+    count[firstLetter] ? count[firstLetter] += 1 : count[firstLetter] = 1;
+    return count;
+}, {});
+
+console.log(countName);
