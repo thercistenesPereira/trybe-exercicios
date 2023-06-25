@@ -53,3 +53,11 @@ const checkNumber = (number) => {
     throw new Error('É necessário inserir um núemro!');
   }
 }
+
+const checkPromo = (number) => {
+    for (let index = 0; index < promo.length; index += 1) {
+        if(number - 1 === index) {
+            return promo[index];
+        }
+    }
+}
